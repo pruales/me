@@ -60,15 +60,15 @@ class Layout extends React.Component{
     }
 
     componentWillMount() {
-        console.log('checking local storage')
-        const localStorageLayout = localStorage.getItem(theme.modeOptions.dark)
-        if (localStorageLayout) {
-          this.setState({ darkTheme: JSON.parse(localStorageLayout) })
+        if (typeof window !== 'undefined') {
+            const localStorageLayout = localStorage.getItem(theme.modeOptions.dark)
+            if (localStorageLayout) {
+              this.setState({ darkTheme: JSON.parse(localStorageLayout) })
+            }
         }
     }
     
       changeTheme() {
-        console.log(this.state)
         this.setState({
           darkTheme: !this.state.darkTheme,
         })
