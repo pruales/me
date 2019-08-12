@@ -59,7 +59,7 @@ class Layout extends React.Component{
         this.changeTheme = this.changeTheme.bind(this)
     }
 
-    componentDidMount() {
+    componentWillMount() {
         console.log('checking local storage')
         const localStorageLayout = localStorage.getItem(theme.modeOptions.dark)
         if (localStorageLayout) {
