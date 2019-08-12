@@ -13,10 +13,7 @@ const Content = styled.nav`
         width: ['100%', '640px']
     })}
     padding-top: 18px;
-    font-size: 18px;
-    @media (max-width: 320px) {
-        font-size: 16px; 
-    }
+
 `
 
 const NavLink = styled(Link)`
@@ -30,6 +27,10 @@ const NavLink = styled(Link)`
     font-family: freight-sans-pro, sans-serif;
     font-weight: 600;
     font-style: normal;
+    font-size: 18px !important;
+    @media (max-width: 320px) {
+        font-size: 16px !important; 
+    }
 
 `
 
@@ -101,11 +102,11 @@ const Header = ({changeTheme, darkTheme}) => (
 Header.propTypes = {
     changeTheme: PropTypes.func,
     darkTheme: PropTypes.bool
-  }
+}
   
-  Header.defaultProps = {
+Header.defaultProps = {
     changeTheme: ()=>{},
     darkTheme: true
-  }
+}
 
 export default Header;

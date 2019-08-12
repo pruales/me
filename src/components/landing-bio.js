@@ -16,8 +16,6 @@ const NameHeader = styled.h1`
 const Intro = styled.p`
     margin-top: 24px;
     ${theme.mq({
-        fontSize: ['14px', '20px'],
-        lineHeight: ['25px', '32px'],
         width: ['auto', '640px'],
         marginRight: ['24px', '']
     })};

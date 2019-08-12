@@ -26,8 +26,11 @@ const Background = styled.div`
     left: 0;
     overflow-y: auto;
     z-index: 1000;
-    p {
+    p{
         color: ${props => props.theme.secondary_color};
+    }
+    h1 {
+        color: ${props => props.theme.primary_color};
     }
     a {
         color: ${props => props.theme.secondary_color};
@@ -91,6 +94,20 @@ class Layout extends React.Component{
                                 font-family: proxima-nova, sans-serif;
                                 font-weight: 400;
                                 font-style: normal;
+                                ${theme.mq({
+                                    fontSize: ['14px', '20px'],
+                                    lineHeight: ['25px', '32px'],
+                                })}
+                            }
+
+                            h1 {
+                                font-size: 30px;
+                                font-family: freight-sans-pro, sans-serif;
+                                font-weight: 700;
+                                font-style: normal;
+                                @media (max-width: 320px) {
+                                    font-size: 20px;
+                                }
                             }
                             
                             * , *:before, *:after{ 
