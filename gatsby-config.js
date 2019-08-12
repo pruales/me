@@ -5,5 +5,25 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: `Paul Ruales`,
+    firstName: `Paul`,
+    lastName: `Ruales`,
+    description: `My personal landing page where I share my work and thoughts.`,
+    author: `Paul Ruales`,
+    siteUrl: `https://paulruales.com`,
+    social: {
+      twitter: `@prminified`,
+    },
+  },
+  plugins: [
+    'gatsby-plugin-emotion',
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/blog`
+      }
+    },
+  ]
 }
