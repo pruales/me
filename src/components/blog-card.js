@@ -7,7 +7,7 @@ import { Link } from "gatsby";
 
 const BlogTitle = styled.h1`
     margin-top: 64px;
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
     ${theme.mq({
         width: ['350px', 'auto']
     })}
@@ -15,9 +15,10 @@ const BlogTitle = styled.h1`
         width: auto;
     }
     a {
-        color: ${props => props.theme.primary_color} !important;
         text-decoration: none !important;
+        color: var(--aHoverColor) !important;
     }
+  
 `;
 
 const Tags = styled.div`
@@ -32,8 +33,8 @@ const Tag = styled.p`
     margin-bottom: 0;
     margin-right: 8px;
     ${theme.mq({
-        fontSize: ['12px', '16px'],
-        lineHeight: ['12px', '14px']
+        fontSize: ['12px !important', '16px !important'],
+        lineHeight: ['12px!important', '14px !important']
     })}
     display: inline-block;
     position: relative;
@@ -46,10 +47,10 @@ const Tag = styled.p`
 `;
 
 const MetaData = styled.p`
-    margin: 0;
+    margin: 0 !important;
     ${theme.mq({
-        fontSize: ['12px', '14px'],
-        lineHeight: ['12px', '14px']
+        fontSize: ['12px !important', '14px !important'],
+        lineHeight: ['12px !important', '14px !important']
     })}
 `;
 

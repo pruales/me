@@ -38,17 +38,16 @@ const Card = styled.div`
 
 const Name = styled.h1`
     margin-top: 8px;
-    font-size: 20px;
+    font-size: 20px !important;
     font-family: freight-sans-pro, sans-serif;
-    font-weight: 400;
+    font-weight: 400 !important;
     font-style: normal;
     width: ${size.normal};
     text-align:center;
-    color: ${props => props.theme.primary_color};
     @media (max-width: 320px) {
         width: ${size.small};
-        font-size: 18px;
-        margin-top: 6px;
+        font-size: 18px !important;
+        margin-top: 6px !important;
     }
 `;
 

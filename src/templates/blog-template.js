@@ -9,7 +9,6 @@ import SEO from "../components/SEO"
 const Title = styled.h1`
     margin-top: 64px;
     margin-bottom: 8px;
-    color: ${props => props.theme.primary_color}
 `
 
 const Content = styled.div`
@@ -22,8 +21,8 @@ const Content = styled.div`
 const Metadata = styled.p`
     margin: 0;
     ${theme.mq({
-        fontSize: ['12px', '14px'],
-        lineHeight: ['12px', '14px']
+        fontSize: ['12px !important', '14px !important'],
+        lineHeight: ['12px !important', '14px !important']
     })}
 `;
 

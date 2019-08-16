@@ -1,0 +1,42 @@
+@import url("https://use.typekit.net/bjk4etu.css");
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    margin: 0;
+    transition: background-color 0.3s ease-out;
+
+    background-color: var(--bg)
+
+}
+
+body.light {
+    --bg: #FDFDFD;
+    --pColor: #35425C;
+    --h1Color: #1A202C;
+    --aColor: #35425C;
+    --aHoverColor: #1A202C;
+}
+body.dark{
+    --bg: #1A202C;
+    --pColor: #A0AEC0;
+    --h1Color: #FDFDFD;
+    --aColor: #A0AEC0;
+    --aHoverColor: #FDFDFD;
+}
+
+
+* , *:before, *:after{ 
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -ms-box-sizing:border-box;
+  }
+
+a {
+    text-decoration: underline;
+}
+a:-webkit-any-link {
+    text-decoration: underline;
+    cursor: pointer;
+}

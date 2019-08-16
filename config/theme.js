@@ -53,7 +53,9 @@ const theme = {
     mq,
     colors,
     modeOptions,
-    colorTheme
+    colorTheme,
+    lightTheme,
+    darkTheme
 }   
 
 export default theme;

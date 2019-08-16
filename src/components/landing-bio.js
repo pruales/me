@@ -10,7 +10,6 @@ const NameHeader = styled.h1`
     font-family: freight-sans-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: ${props => props.theme.primary_color}
 `
 
 const Intro = styled.p`
@@ -36,11 +35,9 @@ const LandingBio = () => (
             <div>
                 <NameHeader>Hi, I'm {data.site.siteMetadata.firstName}</NameHeader>
                 <Intro>
-                    The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. 
-                    Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! 
-                    Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. 
-                    Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. 
-                    How quickly daft jumping zebras vex. Two driven jocks help fax my big quiz. 
+                    I like to build useful things with code. Currently, I'm a software engineer at Uptake working
+                    on a cool AI application that helps improve wind energy performance. In my free time, I like to write and 
+                    experiment with new product ideas.  
                 </Intro>
             </div>
         )}

@@ -6,6 +6,7 @@ import React from 'react';
 import MePic from '../assets/me.jpg';
 import Sun from '../assets/sun.svg';
 import Moon from '../assets/moon.svg';
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Content = styled.nav`
     ${theme.mq({
@@ -20,7 +21,7 @@ const NavLink = styled(Link)`
     ${theme.mq({
         marginLeft: ['32px', '48px']
     })}
-    color: ${props => props.theme.primary_color} !important;
+   
     text-decoration: none !important;
     display: inline-block;
     position: relative; 
@@ -28,8 +29,10 @@ const NavLink = styled(Link)`
     font-weight: 600;
     font-style: normal;
     font-size: 18px !important;
-    @media (max-width: 320px) {
-        font-size: 16px !important; 
+    color: var(--aHoverColor) !important;
+    
+    @media (max-width: 320px) { 
+        font-size: 16px !important;   
     }
 
 `
@@ -84,7 +87,7 @@ const ThemeIcon = styled.img`
 
 //const themeButton = styled.im
 
-const Header = ({changeTheme, darkTheme}) => (
+const Header = () => (
     <SiteHeader>
         <Content>
             <p>
@@ -93,20 +96,23 @@ const Header = ({changeTheme, darkTheme}) => (
                 </HomeLink>
                 <NavLink to="/portfolio">Experiments</NavLink>
                 <NavLink to="/blog">Blog</NavLink>
-                <ThemeIcon onClick={changeTheme} src={darkTheme ? Sun : Moon}/>           
+                <ThemeToggler>
+                    {({theme, toggleTheme}) => (
+                        <ThemeIcon onClick={e => toggleTheme(theme === 'dark' ? 'light' : 'dark')} src={theme === 'dark' ? Sun : Moon}/> 
+                    )}
+                </ThemeToggler>
+                          
             </p>
         </Content>
     </SiteHeader>
 )
 
-Header.propTypes = {
-    changeTheme: PropTypes.func,
-    darkTheme: PropTypes.bool
-}
+// Header.propTypes = {
+//     darkMode: PropTypes.object
+// }
   
-Header.defaultProps = {
-    changeTheme: ()=>{},
-    darkTheme: true
-}
+// Header.defaultProps = {
+//     darkMode: {}
+// }
 
 export default Header;
