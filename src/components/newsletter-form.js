@@ -19,15 +19,14 @@ const Button = styled.button`
     letter-spacing: 0.45px;
     ${theme.mq({
         fontSize: ['14px', '20px'],
-        lineHeight: ['25px', '32px'],
         height: ['48px', '64px']
     })}
 
     &:hover {
         background-color: #8BEFCC;
     }
-
-    transition: background-color 0.1s ease-out
+    margin: 0;
+    transition: background-color 0.1s ease-out;
 `
 
 const Input = styled.input`
@@ -37,7 +36,7 @@ const Input = styled.input`
     font-style: normal;
     border-radius: 4px 0 0 4px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     ${theme.mq({
         fontSize: ['14px', '20px'],
         lineHeight: ['16px', '23px'],
