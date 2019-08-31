@@ -48,6 +48,8 @@ const Input = styled.input`
     @media (max-width: 320px) { 
         width: 50%;
     }
+
+    background-color: var(--inputColor);
 `
 
 const Title = styled.h1`

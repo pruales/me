@@ -16,6 +16,7 @@ body.light {
     --h1Color: #1A202C;
     --aColor: #35425C;
     --aHoverColor: #1A202C;
+    --inputColor: rgba(0,0,0,0.1);
 }
 body.dark{
     --bg: #1A202C;
@@ -23,6 +24,7 @@ body.dark{
     --h1Color: #FDFDFD;
     --aColor: #A0AEC0;
     --aHoverColor: #FDFDFD;
+    --inputColor:  #FDFDFD;
 }
 
 
