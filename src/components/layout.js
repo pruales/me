@@ -58,9 +58,7 @@ const StyleWrapper = styled.div`
     a:hover {
         color: var(--aHoverColor);
     }
-    --webkit-overflow-scrolling: touch;
-
-
+    -webkit-overflow-scrolling: touch;
 `
 
 const Footer = styled.footer`
