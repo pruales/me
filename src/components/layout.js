@@ -58,6 +58,8 @@ const StyleWrapper = styled.div`
     a:hover {
         color: var(--aHoverColor);
     }
+    --webkit-overflow-scrolling: touch;
+
 
 `
 
