@@ -17,6 +17,7 @@
     "@emotion/styled": "^10.0.14",
     "@mdx-js/mdx": "^1.2.2",
     "@mdx-js/react": "^1.2.2",
+    "@statickit/react": "^1.0.0-beta.2",
     "emotion-theming": "^10.0.14",
     "facepaint": "^1.2.1",
     "gatsby": "^2.13.18",

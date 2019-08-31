@@ -10,7 +10,6 @@ import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const Content = styled.nav`
     ${theme.mq({
-        paddingLeft: ['24px', '0'],
         width: ['100%', '640px']
     })}
     padding-top: 18px;
@@ -77,9 +76,6 @@ const ThemeIcon = styled.img`
     height: 24px;
     margin-bottom: 0;
     margin-top: 12px;
-    ${theme.mq({
-        marginRight: ['24px', '0'],
-    })}
     float: right;
     vertical-align: middle;
     transition: opacity 0.25s ease;

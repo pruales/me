@@ -12,7 +12,6 @@ const PortfolioGrid = styled.div`
     ${theme.mq({
         gridTemplateColumns: ['auto auto' ,'auto auto auto'],
         gridColumnGap: ['58px', '48px'],
-        paddingLeft: ['10px', '0']
     })}
     margin-top: 64px;
     display: grid;

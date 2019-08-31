@@ -4,9 +4,9 @@ body {
     -webkit-font-smoothing: antialiased;
     padding: 0;
     margin: 0;
-    transition: background-color 0.3s ease-out;
-
-    background-color: var(--bg)
+    transition: color 0.2s ease-out, background-color 0.2s ease-out;
+    background-color: var(--bg);
+    color: var(--pColor);
 
 }
 
@@ -39,4 +39,9 @@ a {
 a:-webkit-any-link {
     text-decoration: underline;
     cursor: pointer;
+}
+html {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }

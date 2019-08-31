@@ -5,6 +5,7 @@ import theme from '../../config/theme'
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import SEO from "../components/SEO"
+import Newsletter from "../components/newsletter-form";
 
 const Title = styled.h1`
     margin-top: 64px;
@@ -15,7 +16,6 @@ const Content = styled.div`
     margin-top: 24px;
     ${theme.mq({
         width: ['auto', '640px'],
-        marginRight: ['24px', '']
     })};
 `
 const Metadata = styled.p`
@@ -42,6 +42,7 @@ export default ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) 
                <MDXRenderer>
                    {postNode.body}
                </MDXRenderer>
+               <Newsletter/>
            </Content>
         </Layout>
     )

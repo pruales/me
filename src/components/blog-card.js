@@ -8,9 +8,6 @@ import { Link } from "gatsby";
 const BlogTitle = styled.h1`
     margin-top: 64px;
     margin-bottom: 8px !important;
-    ${theme.mq({
-        width: ['350px', 'auto']
-    })}
     @media (max-width: 320px) {
         width: auto;
     }
