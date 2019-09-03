@@ -17,7 +17,8 @@ module.exports = {
     },
   },
   plugins: [
-    'gatsby-plugin-emotion',
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-mdx`,
     'gatsby-plugin-dark-mode',
@@ -26,6 +27,12 @@ module.exports = {
       options: {
         name: 'posts',
         path: `${__dirname}/src/posts`
+      }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-146907293-1",
       }
     },
   ]

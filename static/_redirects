@@ -1,0 +1,5 @@
+# Redirect domain aliases to primary domain
+https://www.paulruales.com/* https://www.thesideproject.dev/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://keen-shirley-fd51df.netlify.com/* https://www.thesideproject.dev/:splat 301!
