@@ -34,8 +34,7 @@ const LandingBio = () => (
             <div>
                 <NameHeader>Hi, I'm {data.site.siteMetadata.firstName}</NameHeader>
                 <Intro>
-                    I like to build useful things with code. Currently, I'm a software engineer at Uptake working
-                    on a cool AI application that helps improve wind energy performance. In my free time, I like to write and 
+                    I like to build useful things with code. I'm currently working on blockstack applications. In my free time, I like to write and 
                     experiment with new product ideas. I'm currently building 12 products in 12 months in 12 different programming
                     languages.
                 </Intro>
