@@ -18,6 +18,7 @@ const Blog = ({data: {allMdx: {nodes: posts}}}) => {
                 key={post.fields.slug}
                 />
             )}
+            {posts.length ? null : <p>Its in the works.</p>}
         </Layout>
     )
 }

@@ -5,7 +5,7 @@ categories:
   - 12/12/12
 spoiler: "This is gonna be fun."
 ---
-On October 1st, 2019 I will begin a 12 month challenge to launch 12 different products, and because I want to expand my
+On January 1st, 2020 I will begin a 12 month challenge to launch 12 different products, and because I want to expand my
 skills as a developer I will write them in 12 different languages. I compiled a list of languages that I've wanted to try out below.
 I included "no code" because I really want to see what the [hype](https://medium.com/@rrhoover/the-rise-of-no-code-e733d7c0944d) is all about.
 
