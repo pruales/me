@@ -42,7 +42,7 @@ export default ({ pageContext: { slug, prev, next }, data: { mdx: postNode } }) 
                <MDXRenderer>
                    {postNode.body}
                </MDXRenderer>
-               <Newsletter/>
+               {/* <Newsletter/> */}
            </Content>
         </Layout>
     )
