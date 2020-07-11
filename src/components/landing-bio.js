@@ -34,7 +34,7 @@ const LandingBio = () => (
             <div>
                 <NameHeader>Hi, I'm {data.site.siteMetadata.firstName}</NameHeader>
                 <Intro>
-                    I like to build useful things with code. I'm currently working on blockstack applications. In my free time, I like to write and 
+                    I like to build useful things with code. I'm currently a software engineer on the Alexa Podcasts team. In my free time, I like to write and 
                     experiment with new product ideas.
                 </Intro>
             </div>
